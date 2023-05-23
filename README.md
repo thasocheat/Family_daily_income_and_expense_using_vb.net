@@ -14,8 +14,26 @@ git clone https://github.com/thasocheat/Family_daily_income_and_expense_using_vb
 
 2. Create database
 
-3. locate in to project directory name MySQL Database and click open the sql file and run query 
+3. locate in to project directory name MySQL Database and click open the sql file and run query
 
+## User and Password
+  - admin
+  - 123
+
+## Demo
+<h5 align="center">Welcome Page</h5>
+<p align="center"><img src="Demo/Welcome-page.png" width="400"></p>
+
+<h5 align="center">Login page</h5>
+<p align="center"><img src="Demo/Login-page.png" width="350"></p>
+
+<h5 align="center">Dashboard</h5>
+<p align="center"><img src="Demo/User-dashboard.png" width="400"></p>
+
+<h5 align="center">Add new user page</h5>
+<p align="center"><img src="Demo/Add-new-user.png" width="400"></p>
+
+<hr>
 
 ## Me do this just for learn👩‍💻👨‍💻 :
 
