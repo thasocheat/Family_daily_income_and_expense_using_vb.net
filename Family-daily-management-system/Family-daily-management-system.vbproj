@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E56F620E-D9BB-4951-90D7-2CB3FE24EE62}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Family_daily_management_system.FrmWelcomePage</StartupObject>
+    <RootNamespace>Family_daily_management_system</RootNamespace>
+    <AssemblyName>Family-daily-management-system</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Family-daily-management-system.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Family-daily-management-system.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\Bunifu_UI_v1.52\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.24.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\New_family_income&amp;expense\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAdd\FrmAddCategory.Designer.vb">
+      <DependentUpon>FrmAddCategory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd\FrmAddCategory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\FrmAddExpense.Designer.vb">
+      <DependentUpon>FrmAddExpense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd\FrmAddExpense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\FrmAddIncome.Designer.vb">
+      <DependentUpon>FrmAddIncome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd\FrmAddIncome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdd\FrmAddNewUser.Designer.vb">
+      <DependentUpon>FrmAddNewUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdd\FrmAddNewUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboard\FrmAdminDashboard.Designer.vb">
+      <DependentUpon>FrmAdminDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboard\FrmAdminDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboard\FrmAdminDashboardBody.Designer.vb">
+      <DependentUpon>FrmAdminDashboardBody.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboard\FrmAdminDashboardBody.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromLogin\FrmLogin.Designer.vb">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FromLogin\FrmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboard\FrmParentDashboard.Designer.vb">
+      <DependentUpon>FrmParentDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboard\FrmParentDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboard\FrmParentDashboardBody.Designer.vb">
+      <DependentUpon>FrmParentDashboardBody.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboard\FrmParentDashboardBody.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromLogin\FrmRegister.Designer.vb">
+      <DependentUpon>FrmRegister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FromLogin\FrmRegister.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDashboard\FrmSon_And_DautherDashboard.Designer.vb">
+      <DependentUpon>FrmSon_And_DautherDashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormDashboard\FrmSon_And_DautherDashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWelcome\FrmWelcomePage.Designer.vb">
+      <DependentUpon>FrmWelcomePage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormWelcome\FrmWelcomePage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FromLogin\Frm_Login.Designer.vb">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FromLogin\Frm_Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\ModCenter.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormAdd\FrmAddCategory.resx">
+      <DependentUpon>FrmAddCategory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd\FrmAddExpense.resx">
+      <DependentUpon>FrmAddExpense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd\FrmAddIncome.resx">
+      <DependentUpon>FrmAddIncome.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdd\FrmAddNewUser.resx">
+      <DependentUpon>FrmAddNewUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboard\FrmAdminDashboard.resx">
+      <DependentUpon>FrmAdminDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboard\FrmAdminDashboardBody.resx">
+      <DependentUpon>FrmAdminDashboardBody.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromLogin\FrmLogin.resx">
+      <DependentUpon>FrmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboard\FrmParentDashboard.resx">
+      <DependentUpon>FrmParentDashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDashboard\FrmParentDashboardBody.resx">
+      <DependentUpon>FrmParentDashboardBody.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromLogin\FrmRegister.resx">
+      <DependentUpon>FrmRegister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWelcome\FrmWelcomePage.resx">
+      <DependentUpon>FrmWelcomePage.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FromLogin\Frm_Login.resx">
+      <DependentUpon>Frm_Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sign-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-in-textbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_couple-plan-family-budget-manage-finance_13717353.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7948448681639235816-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\suers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+    <None Include="Resources\delete-user.png" />
+    <None Include="Resources\user-edit.png" />
+    <None Include="Resources\user-add.png" />
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\userss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\parent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\student.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Expense.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expense-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expenses.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
