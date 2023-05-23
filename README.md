@@ -33,6 +33,12 @@ git clone https://github.com/thasocheat/Family_daily_income_and_expense_using_vb
 <h5 align="center">Add new user page</h5>
 <p align="center"><img src="Demo/Add-new-user.png" width="400"></p>
 
+<h5 align="center">Add new income page</h5>
+<p align="center"><img src="Demo/Add-income.png" width="400"></p>
+
+<h5 align="center">Add new category</h5>
+<p align="center"><img src="Demo/Add-category.png" width="400"></p>
+
 <hr>
 
 ## Me do this just for learn👩‍💻👨‍💻 :
